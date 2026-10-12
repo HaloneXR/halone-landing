@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: 'Halone XR',
       link: [
         { rel: 'icon', type: 'image/png', href: '/logo.png' },
         { rel: 'stylesheet', href: '/layers.css' },
