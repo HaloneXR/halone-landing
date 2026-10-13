@@ -41,7 +41,7 @@ import logo from '~/assets/images/halone_fullcolor.svg'
             app)
           </div>
 
-          <v-btn href="https://github.com/HaloneXR/halone-android-integration">
+          <v-btn href="https://github.com/HaloneXR/halone-android-integration/releases">
             <v-icon start>mdi-download</v-icon>
             Download from GitHub (.apk)
           </v-btn>
