@@ -1,14 +1,14 @@
 <template>
   <div class="hero d-flex align-center">
     <div class="content pa-8">
-      <div class="headline-text">
+      <div class="headline-text mb-16 pb-16">
         <h1 class="text-headline-large">
           An immersive XR glasses environment for Android
         </h1>
         <h2 class="text-headline-small">
           Turn your phone and glasses into a portable productivity environment
         </h2>
-        <div class="d-flex align-center ga-2">
+        <div class="d-flex mt-4 pb-16 align-center ga-2">
           <v-btn size="x-large" to="/download">
             <v-icon start>mdi-download</v-icon>
             Download Alpha
