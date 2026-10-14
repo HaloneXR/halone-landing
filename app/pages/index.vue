@@ -152,7 +152,7 @@
 
         <div class="d-flex align-center ga-2 mt-2">
           <v-icon>mdi-memory</v-icon>
-          At lest 8GB of RAM, 12GB recommended
+          At least 8GB of RAM, 12GB recommended
         </div>
 
         <div class="d-flex align-center ga-2 mt-2">
