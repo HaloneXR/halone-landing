@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({ title: 'Privacy Policy - Halone XR' })
 
-const lastUpdated = 'October 12, 2026'
+const lastUpdated = 'October 19, 2026'
 </script>
 <template>
   <v-container class="privacy">
@@ -95,13 +95,24 @@ const lastUpdated = 'October 12, 2026'
     <h2 class="text-title-large">Diagnostic data (optional)</h2>
 
     <p>
-      A future version of Halone may offer anonymous crash reports to help us
-      fix bugs. This will be off by default and only enabled if you opt in from
-      the app's settings. Crash reports would contain technical information such
-      as the app version, device model, Android version and the error stack
-      trace, and would not include your name, accounts, browsing data or files.
-      You can turn it off at any time. This policy will be updated before that
-      feature ships.
+      Halone can keep crash reports to help us fix bugs. This is off by default
+      and only enabled if you turn on <strong>Crash reports</strong> under
+      Settings &gt; Privacy. While it is on, Halone keeps its own recent log on
+      your device. After a crash, it offers to let you share a report.
+    </p>
+
+    <p>
+      A report contains the app version, device model, Android version, the
+      error and Halone's recent log. Web addresses, storage paths, downloaded
+      file names and your glasses' serial number are removed from it. It does
+      not include your name, accounts, browsing history or files.
+    </p>
+
+    <p>
+      Nothing is sent automatically. A report or log only leaves your device
+      when you share it yourself, through Android's share menu, with whoever
+      you choose. Turning the setting off deletes the log and any pending
+      report.
     </p>
 
     <h2 class="text-title-large">Children</h2>
