@@ -8,6 +8,7 @@
       <div class="d-flex align-center pa-4 w-100">
         <span>&copy; 2026 TheBITLINK</span>
         <v-spacer />
+        <v-btn variant="text" to="/faq">FAQ</v-btn>
         <v-btn variant="text" to="/privacy">Privacy Policy</v-btn>
       </div>
     </v-footer>
