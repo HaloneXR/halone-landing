@@ -12,18 +12,17 @@ useHead({ title: 'FAQ - Halone XR' })
     <p>
       Android draws for every screen in step with the phone's own screen. Many
       phones let their screen drop to 60 Hz when nothing on it is moving, and
-      while you wear the glasses the phone mostly shows Halone's touchpad,
-      which rarely moves. So glasses set to 90 or 120 Hz still get only 60
-      frames a second. Settings &gt; Display in Halone warns you when this
-      happens.
+      while you wear the glasses the phone mostly shows Halone's touchpad, which
+      rarely moves. So glasses set to 90 or 120 Hz still get only 60 frames a
+      second. Settings &gt; Display in Halone warns you when this happens.
     </p>
 
     <p>
-      Some refresh rates can't be matched at all. A phone's screen refreshes
-      at a fixed set of rates, often 120 Hz and its divisions, such as 60 Hz.
-      A glasses rate outside that set, like 90 Hz on many phones, may look
-      uneven however fast Halone draws. Halone marks those rates "may stutter".
-      60 Hz and the phone's top rate are the smooth choices.
+      Some refresh rates can't be matched at all. A phone's screen refreshes at
+      a fixed set of rates, often 120 Hz and its divisions, such as 60 Hz. A
+      glasses rate outside that set, like 90 Hz on many phones, may look uneven
+      however fast Halone draws. Halone marks those rates "may stutter". 60 Hz
+      and the phone's top rate are the smooth choices.
     </p>
 
     <p>
@@ -31,23 +30,28 @@ useHead({ title: 'FAQ - Halone XR' })
       second limit. There are two ways to do it.
     </p>
 
-    <h3 class="text-title-medium">Automatic, with the Android Integration plugin</h3>
+    <h3 class="text-title-medium">
+      Automatic, with the Android Integration plugin
+    </h3>
 
     <p>
-      The Android Integration plugin already uses Shizuku, which can change
-      this setting for you. With the plugin installed and set up:
+      The Android Integration plugin already uses Shizuku, which can change this
+      setting for you. With the plugin installed and set up:
     </p>
 
     <ol>
       <li>In Halone, open Settings &gt; Plugins.</li>
       <li>Select the cog beside Android Integration.</li>
-      <li>Turn on <strong>Keep the phone's screen at its top refresh rate</strong>.</li>
+      <li>
+        Turn on
+        <strong>Keep the phone's screen at its top refresh rate</strong>.
+      </li>
     </ol>
 
     <p>
-      The plugin sets it when the environment starts and puts it back as it
-      was when the environment stops, so the phone doesn't stay at its top
-      rate, and use more battery, when you aren't wearing the glasses.
+      The plugin sets it when the environment starts and puts it back as it was
+      when the environment stops, so the phone doesn't stay at its top rate, and
+      use more battery, when you aren't wearing the glasses.
     </p>
 
     <h3 class="text-title-medium">Manually, with adb</h3>
@@ -77,6 +81,24 @@ useHead({ title: 'FAQ - Halone XR' })
     </p>
 
     <pre><code>adb shell settings put system min_refresh_rate &lt;the number it printed&gt;</code></pre>
+
+    <h2 id="drm" class="text-title-large">
+      Why are videos black in Netflix and other streaming apps?
+    </h2>
+
+    <p>
+      Netflix, Disney+, Prime Video and other premium streaming apps protect
+      their videos with DRM. Android only shows protected video on screens it
+      trusts, and the screen Halone gives Android apps isn't one of them. So the
+      app's menus, buttons and subtitles show up, but the video itself stays
+      black. The sound usually still plays.
+    </p>
+
+    <p>
+      This comes from Android and the streaming app, not from Halone, and Halone
+      can't turn it off. Only a few system apps are allowed to show protected
+      video on other screens, and Shizuku doesn't give Halone that permission.
+    </p>
   </v-container>
 </template>
 
