@@ -134,8 +134,40 @@
           </v-tooltip>
           XREAL Air 2 Ultra
         </div>
+        <div class="d-flex ga-2 align-center mb-2">
+          <v-tooltip text="Untested" location="top">
+            <template v-slot:activator="{ props }">
+              <v-icon v-bind="props" color="warning">mdi-alert</v-icon>
+            </template>
+          </v-tooltip>
+          XREAL One
+        </div>
+        <div class="d-flex ga-2 align-center mb-2">
+          <v-tooltip text="Verified and fully supported" location="top">
+            <template v-slot:activator="{ props }">
+              <v-icon v-bind="props" color="success">mdi-check-circle</v-icon>
+            </template>
+          </v-tooltip>
+          XREAL One Pro
+        </div>
+        <div class="d-flex ga-2 align-center mb-2">
+          <v-tooltip text="Untested" location="top">
+            <template v-slot:activator="{ props }">
+              <v-icon v-bind="props" color="warning">mdi-alert</v-icon>
+            </template>
+          </v-tooltip>
+          RayNeo GT
+        </div>
+        <div class="d-flex ga-2 align-center mb-2">
+          <v-tooltip text="Verified and fully supported" location="top">
+            <template v-slot:activator="{ props }">
+              <v-icon v-bind="props" color="success">mdi-check-circle</v-icon>
+            </template>
+          </v-tooltip>
+          RayNeo GT Max
+        </div>
         <div class="mt-2">
-          Support for more glasses is planned, including non-XREAL hardware.
+          Support for more glasses is planned.
         </div>
       </v-col>
       <v-col cols="12" md="6">
